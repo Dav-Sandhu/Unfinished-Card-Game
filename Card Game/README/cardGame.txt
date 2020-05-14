@@ -1,0 +1,31 @@
+BOTTOM: x=(3,441)(y=34,247)
+TOP: x=(4,440)y=(4,31)
+
+rules: medieval card game
+- can play 2 cards per turn
+- goal is to conquer opponents castle
+- deck contains 15 cards
+- start with 3
+- draw 1 per turn
+- castles can only be conquered if no troops defending it
+- troops conquering castle cannot attack new troops on enemy field
+- enemy can attack troops conquering castle
+- castle has 5 health
+- it loses 1 health every turn a troop is on it
+- once troop attacks it cannot attack again until next turn
+- players can choose cards in deck (any amount of each you decide)
+- field has 3 spots plus conquering spot
+- non troop cards stack but field space is limited
+- cannot conquer castle while opponent has troop unless already conquering
+
+cards:
+common(troop): (2atk -> troop) (1atk -> castle) (4health)
+sword(item): (+1atk -> troop)
+shield(item): (+2health -> troop) <-stays on field while troop attatched stays
+potion(item): (+1health -> troop) (disposable)
+rebuild(item): (+1health -> castle) (disposable)
+conquerer(troop): (1atk -> troop) (2atk -> castle) (2health)
+knight(troop): (1atk -> troop) (0atk -> castle) (6health)
+swordsman(troop): (3atk -> troop) (1atk -> castle) (3health)
+
+

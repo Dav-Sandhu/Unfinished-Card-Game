@@ -1,0 +1,15 @@
+card 1 (troop): option
+card 1 (troop): ~any command (discard/cancel)
+card 2 (item): option ~ERROR
+
+Error
+
+main.lua:172: bad argument #1 to 'draw' (Drawable exected, got nil)
+
+Traceback
+
+[C]: in function 'draw'
+main.lua:172: in function 'draw'
+[C]: in function 'xpcall'
+
+172: love.graphics.draw(images['itemoptions' .. const.optionSel], 70, 80, 0, 0.75, 0.75)
